@@ -18,7 +18,7 @@ export function absoluteUrl(path: string) {
 export function constructMetadata({
   title = "talkPDF - talk with your PDF",
   description = "talkPDF is an open-source software to make chatting to your PDF files easy.",
-  image = "/thumbnail.png",
+  image = "/thumbnail.jpg",
   icons = "/favicon.ico",
   noIndex = false
 }: {
