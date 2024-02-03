@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.3.1
     version: 3.3.1(react-hook-form@7.46.2)
   '@kinde-oss/kinde-auth-nextjs':
-    specifier: ^1.8.18
-    version: 1.8.18(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.8.25
+    version: 1.9.2(react-dom@18.2.0)(react@18.2.0)
   '@mantine/hooks':
     specifier: ^7.0.1
     version: 7.0.1(react@18.2.0)
@@ -399,21 +399,29 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: false
 
-  /@kinde-oss/kinde-auth-nextjs@1.8.18(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-sewXEWkFA7lRMjZT4quoHglWDZHpknj5BKAFil2c+mnP/Abq++Isay/UzQQV3ykDN5koi0hlGmNr/w5umhyUhw==}
+  /@kinde-oss/kinde-auth-nextjs@1.9.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-m1IZCrKVoVCnzUSag4fXCBtQUOtE3RsjsYuhIdZBeSCBWsOkd4Sr5MD2fWwBfaoxV8kKzuQLDZzJiJd1NPXx6A==}
     peerDependencies:
       react: ^18.1.0
       react-dom: ^18.1.0
     dependencies:
+      '@kinde-oss/kinde-typescript-sdk': 2.6.2
       cookie: 0.5.0
-      crypto: 1.0.1
       crypto-js: 4.1.1
       jwt-decode: 3.1.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       simple-oauth2: 4.3.0
+      uncrypto: 0.1.3
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@kinde-oss/kinde-typescript-sdk@2.6.2:
+    resolution: {integrity: sha512-z46iSYFP9u2h7cfrDQ44yjKIeZ/8/49Q2d8VOdTrLM/3tR2cL4/dVfxuUXW3g564mDMNy/VEDy4iqJ0GYEoQEQ==}
+    dependencies:
+      jwt-decode: 4.0.0
+      uncrypto: 0.1.3
     dev: false
 
   /@mantine/hooks@7.0.1(react@18.2.0):
@@ -2166,11 +2174,6 @@ packages:
     resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
     dev: false
 
-  /crypto@1.0.1:
-    resolution: {integrity: sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==}
-    deprecated: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
-    dev: false
-
   /css-tree@2.3.1:
     resolution: {integrity: sha512-6Fv1DV/TYw//QF5IzQdqsNDjx/wc8TrMBZsqjL9eW01tWb7R7k/mq+/VXfJCl7SoD5emsJop9cOByJZfs8hYIw==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
@@ -3438,6 +3441,11 @@ packages:
 
   /jwt-decode@3.1.2:
     resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
+    dev: false
+
+  /jwt-decode@4.0.0:
+    resolution: {integrity: sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==}
+    engines: {node: '>=18'}
     dev: false
 
   /keyv@4.5.3:
@@ -5616,6 +5624,10 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    dev: false
+
+  /uncrypto@0.1.3:
+    resolution: {integrity: sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==}
     dev: false
 
   /unified@10.1.2:
